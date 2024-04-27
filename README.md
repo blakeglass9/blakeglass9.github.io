@@ -2,7 +2,7 @@
 This is a display of sample websites that I made using HTML and CSS.
 
 # Projects
-Space Station Website
+Space Station Website &
 Movie Theater Website
 
 # Space Station Site
