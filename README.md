@@ -2,9 +2,8 @@
 This is a display of sample websites that I made using HTML and CSS.
 
 # Projects
-<a href="./academy_cinemas.html"
-
-<a href="./SpaceStation.html"   
+Space Station Website
+Movie Theater Website
 
 # Space Station Site
 
