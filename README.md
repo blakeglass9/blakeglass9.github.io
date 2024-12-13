@@ -11,3 +11,6 @@ This project functions as a phone book for a user. It saves a contact's name, ph
 
 ### Check Files Gui
 This project allows the user to choose and transfer all `.txt` files from one chosen directory to another. All files that are moved will be saved in a database.
+
+### Azure DevOps Live Project
+Created a basic fan made NFL website which displayed/organized teams records and other statistics
