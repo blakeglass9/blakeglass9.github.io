@@ -2,19 +2,19 @@
 
 /* Affects entire document */
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Smooth scrolling for navbar clicks */
 }
 
 /* Body */
 body {
     margin: 0;
     opacity: 1;
-    transition: 3s opacity;
+    transition: 3s opacity; /* 3-second fade-in effect */
     letter-spacing: .2vw;
     font-family: Avant Garde, Helvetica;
     font-size: 1.5vw; 
-    overflow-x: hidden;
-    user-select: none;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    user-select: none; /* Prevent text selection */
 }
 
 /* Fade effect when page loads */
@@ -156,7 +156,6 @@ footer {
 
 .mySlides {
     display: none;
-    position: relative;
 }
 
 /* Slideshow container */
@@ -167,7 +166,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
 }
 
 /* Navigation arrows */
@@ -175,26 +173,24 @@ footer {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     font-size: 24px;
     border-radius: 50%;
     text-align: center;
-    line-height: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-    z-index: 20; /* Ensuring it's above everything */
+    line-height: 40px;
+    z-index: 10;
 }
 
-/* Positioning slideshow arrows correctly */
+/* Move arrows **outside** the image area */
 .Previous {
-    left: 15px;
+    left: -50px;
 }
 
 .Next {
-    right: 15px;
+    right: -50px;
 }
 
 /* Hover effect */
@@ -203,25 +199,20 @@ footer {
     color: black;
 }
 
-/* Slideshow text overlay */
-.Slideshow_Text {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    text-align: center;
-    font-size: 2vw;
-    font-weight: bold;
+/* Slideshow text */
+.text {
     color: white;
-    background-color: rgba(0, 0, 0, 0.75);
     padding: 1vw;
-    border-radius: 5px;
-}
-
-/* Slideshow text hover effect */
-.Slideshow_Text:hover {
-    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: Perpetua, Rockwell Extra Bold;
+    letter-spacing: .1vw;
+    font-size: 1.5vw;
+    background-color: rgba(0, 0, 0, 0.75);
+    font-weight: bold;
+    border-radius: 0px 0px 7px 7px;
 }
 
 /* Dots under the slideshow */
