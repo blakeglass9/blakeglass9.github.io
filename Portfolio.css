@@ -214,14 +214,12 @@ footer {
 
 /* Slideshow section / container */
 #Slideshow_Container {
-    width: 1000px; /* Match image width */
-    height: 700px; /* Match image height */
+    width: 80%; /* Gives images room */
+    max-width: 1000px; /* Prevents oversizing */
+    margin: auto; /* Centers the slideshow */
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    position: relative;
-    margin: auto;
 }
 
 /* Remove the underline from the previous and next buttons on the slideshow */
@@ -232,12 +230,34 @@ footer {
 /* Images contained within the slideshow */
 .Slideshow_Images {
     width: auto; /* Prevents forced stretching */
-    max-width: 100%; /* Keeps images within their container */
+    max-width: 100%; /* Keeps images within container */
     height: auto; /* Keeps aspect ratio */
-    max-height: 600px; /* Prevents them from getting too big */
+    max-height: 500px; /* Prevents images from getting too big */
     object-fit: contain; /* Ensures images fit without cropping */
     display: block;
     margin: auto;
+}
+
+.Previous, .Next {
+    position: absolute;
+    top: 50%; /* Centers the arrows vertically */
+    transform: translateY(-50%); /* Ensures perfect centering */
+    width: 50px; /* Adjust width for better visibility */
+    height: 50px; /* Adjust height for uniform size */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    font-size: 24px;
+    border-radius: 50%; /* Makes the buttons circular */
+    text-align: center;
+    line-height: 50px;
+}
+
+.Previous {
+    left: 10px; /* Moves left arrow to the left edge */
+}
+
+.Next {
+    right: 10px; /* Moves right arrow to the right edge */
 }
 
 /* Next and previous buttons */
