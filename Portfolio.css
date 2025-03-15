@@ -199,12 +199,13 @@ footer {
     color: black;
 }
 
-/* Slideshow text */
+/* Slideshow text - Centered above images */
 .text {
     color: white;
-    padding: 1vw;
     position: absolute;
-    bottom: 0;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
     font-family: Perpetua, Rockwell Extra Bold;
@@ -212,7 +213,8 @@ footer {
     font-size: 1.5vw;
     background-color: rgba(0, 0, 0, 0.75);
     font-weight: bold;
-    border-radius: 0px 0px 7px 7px;
+    border-radius: 7px;
+    padding: 1vw;
 }
 
 /* Dots under the slideshow */
