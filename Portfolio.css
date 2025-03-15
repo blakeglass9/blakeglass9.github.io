@@ -96,8 +96,8 @@ img {
 .Slideshow_Images {
     width: 100%; /* Ensures images take up full width */
     height: auto; /* Maintains aspect ratio */
-    max-width: 500px; /* Adjust width for uniform size */
-    max-height: 300px; /* Adjust height for uniform size */
+    max-width: 700px; /* Adjust width for uniform size */
+    max-height: 400px; /* Adjust height for uniform size */
     object-fit: contain; /* Ensures full image is visible without stretching */
 }
 
