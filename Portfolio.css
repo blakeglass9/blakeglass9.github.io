@@ -94,12 +94,11 @@ img {
 }
 
 .Slideshow_Images {
-    width: 100%; /* Ensures images fill the container width */
-    height: 100%; /* Ensures images fill the container height */
-    max-width: 1000px; /* Set a fixed width */
-    max-height: 700px; /* Set a fixed height */
-    object-fit: contain; /* Ensures images keep proportions without cropping */
-    display: block; /* Avoids any inline spacing issues */
+    width: 1000px;  /* Set a fixed width */
+    height: 700px;  /* Set a fixed height */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+    display: block;
+    margin: auto;
 }
 
 /* Image element hover effects */
@@ -215,12 +214,14 @@ footer {
 
 /* Slideshow section / container */
 #Slideshow_Container {
-    width: 1000px; /* Match image max-width */
-    height: 700px; /* Match image max-height */
+    width: 1000px; /* Match image width */
+    height: 700px; /* Match image height */
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* Prevents unwanted resizing */
+    overflow: hidden;
+    position: relative;
+    margin: auto;
 }
 
 /* Remove the underline from the previous and next buttons on the slideshow */
