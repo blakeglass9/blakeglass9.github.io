@@ -93,6 +93,15 @@ img {
     margin: auto auto auto auto; /* This centers all images */
 }
 
+.Slideshow_Images {
+    width: 100%; /* Ensures images take up full width */
+    height: auto; /* Maintains aspect ratio */
+    max-width: 500px; /* Adjust width for uniform size */
+    max-height: 300px; /* Adjust height for uniform size */
+    object-fit: contain; /* Ensures full image is visible without stretching */
+}
+
+
 /* Image element hover effects */
 img:hover {
 	filter: grayscale(5%);  /* Brings back most of the image's color when hovered over */
