@@ -231,10 +231,13 @@ footer {
 
 /* Images contained within the slideshow */
 .Slideshow_Images {
-    vertical-align: middle; /* This centers the images vertically within the slideshow container */
-    height: auto; /* The height of the images is automatically adjusted based on the content, ie if your images are different sizes, they will display as different sizes */
-    box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, .75); /* Adds a shadow around the slideshow images */
-    width: 100%; /* The width of the images is automatically adjusted based on the content */
+    width: auto; /* Prevents forced stretching */
+    max-width: 100%; /* Keeps images within their container */
+    height: auto; /* Keeps aspect ratio */
+    max-height: 600px; /* Prevents them from getting too big */
+    object-fit: contain; /* Ensures images fit without cropping */
+    display: block;
+    margin: auto;
 }
 
 /* Next and previous buttons */
