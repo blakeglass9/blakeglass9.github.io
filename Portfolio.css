@@ -94,13 +94,12 @@ img {
 }
 
 .Slideshow_Images {
-    width: 100%; /* Ensures images take up full width */
-    height: 100%; /* Maintains aspect ratio */
-    max-width: 800px; /* Adjust width for uniform size */
-    max-height: 600px; /* Adjust height for uniform size */
-    object-fit: contain; /* Ensures full image is visible without stretching */
+    width: 100%; /* Ensures images fill the container */
+    height: auto; /* Maintains aspect ratio */
+    max-width: 1000px; /* Increase width */
+    max-height: 700px; /* Increase height */
+    object-fit: contain; /* Prevents distortion */
 }
-
 
 /* Image element hover effects */
 img:hover {
