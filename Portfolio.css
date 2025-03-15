@@ -240,17 +240,27 @@ footer {
 
 .Previous, .Next {
     position: absolute;
-    top: 50%; /* Centers the arrows vertically */
-    transform: translateY(-50%); /* Ensures perfect centering */
-    width: 50px; /* Adjust width for better visibility */
-    height: 50px; /* Adjust height for uniform size */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    top: 50%; 
+    transform: translateY(-50%); 
+    width: 50px; 
+    height: 50px; 
+    background-color: rgba(0, 0, 0, 0.5); 
     color: white;
     font-size: 24px;
-    border-radius: 50%; /* Makes the buttons circular */
+    border-radius: 50%;
     text-align: center;
     line-height: 50px;
+    z-index: 10; /* Ensures buttons are above everything else */
 }
+
+.Previous {
+    left: -60px; /* Moves left arrow outside the image */
+}
+
+.Next {
+    right: -60px; /* Moves right arrow outside the image */
+}
+
 
 .Previous {
     left: 10px; /* Moves left arrow to the left edge */
